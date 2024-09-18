@@ -1,0 +1,57 @@
+.articles-section{
+    margin-top: 10rem;
+}
+
+.articles-body{
+    margin-top: 7rem;
+}
+
+.outlines{
+    box-shadow: 2px 2px 5px 4px lightblue;
+    border-radius: 10px;
+    padding: 3rem 2rem;
+}
+
+.outlines a:hover{
+    color: red;
+}
+
+.outlines a{
+    text-decoration: none;
+}
+
+.cover{
+    background-color: rgba(10,10,10, 0.3);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.cover:hover{
+    background-color: rgba(100,100,100, 0.3);
+}
+
+.articel-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    z-index: 100;
+    font-weight: bolder;
+}
+
+
+@media screen and (max-width: 992px) {
+    #titles{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #titles li{
+        list-style-type: none;
+    }
+}
+
