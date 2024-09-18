@@ -1,0 +1,14 @@
+.article-body{
+    margin-top: 10rem;
+}
+
+.article-text{
+    justify-content: center;
+}
+
+.tags{
+    border-radius: 10px;
+}
+.tags button{
+    margin: 0 0.7rem;
+}
