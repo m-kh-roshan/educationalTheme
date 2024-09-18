@@ -129,6 +129,24 @@ rightArticles.addEventListener("click", ()=>{
     articlesMargin = goRightSlider(".articles", 10, articlesMargin)
 })
 
+// back to up
+
+window.onscroll = function() {  
+    const button = document.getElementById("backToTop");  
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {  
+        button.style.display = "block";
+        button.style.zIndex = "1000"  
+    } else {  
+        button.style.display = "none";  
+    }  
+};  
+
+// بازگرداندن کاربر به بالای صفحه  
+document.getElementById("backToTop").onclick = function() {  
+    document.body.scrollTop = 0; // برای Safari  
+    document.documentElement.scrollTop = 0; // برای Chrome، Firefox، IE و Opera  
+};  
+
 
 
 

@@ -6,8 +6,9 @@
 
     <link rel="stylesheet" href="assets/bootstrap-5.3.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/custom.css">
-    <link rel="stylesheet" href="assets/css/news.css">
-    <title>one article</title>
+    <link rel="stylesheet" href="assets/css/oneNews.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <title>contact us</title>
 </head>
 <body>
     <!-- Start Navbar -->
@@ -30,7 +31,7 @@
                 <a class="nav-link" href="articles.html">مقالات</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">انگیزشی</a>
+                <a class="nav-link" href="motivational.html">انگیزشی</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -44,7 +45,7 @@
                 </ul>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">ارتباط باما</a>
+                <a class="nav-link" href="/">ارتباط باما</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">درباره ما</a>
@@ -78,106 +79,57 @@
     </nav>
     <!-- End Navbar -->
 
-    <!-- Start News List -->
-     <div class="container all-news">
-        <div class="title row">
-            <h2>
-                اخبار
-            </h2>
+    <!-- Start News Body -->
+    <div class="container news-body text-end">
+        <div class="row title">
+            <h1 class="fw-bold text-center mb-5">تماس ما</h1>
+            <hr>
         </div>
-        <div class="row row-cols-1 row-cols-md-4 g-4">
-            <div class="col">
-              <a href="one-news.html">
-                <div class="card">
-                    <img src="assets/images/5.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <div class="date">۱۴۰۳/۶/۲۶</div>
-                      <h5 class="card-title">عنوان خبر</h5>
+        <div class="row">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+                    <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                  </svg> 
+                  <span>نام فروشگاه</span>
+            </div>
+            <div>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M16 7.5C14.9122 7.5 13.8488 7.82257 12.9444 8.42692C12.0399 9.03126 11.3349 9.89025 10.9187 10.8952C10.5024 11.9002 10.3935 13.0061 10.6057 14.073C10.8179 15.1399 11.3417 16.1199 12.1109 16.8891C12.8801 17.6583 13.8601 18.1821 14.927 18.3943C15.9939 18.6065 17.0998 18.4976 18.1048 18.0813C19.1098 17.6651 19.9687 16.9601 20.5731 16.0556C21.1774 15.1512 21.5 14.0878 21.5 13C21.4983 11.5418 20.9184 10.1438 19.8873 9.11274C18.8562 8.08165 17.4582 7.50165 16 7.5ZM16 15.5C15.5055 15.5 15.0222 15.3534 14.6111 15.0787C14.2 14.804 13.8795 14.4135 13.6903 13.9567C13.5011 13.4999 13.4516 12.9972 13.548 12.5123C13.6445 12.0273 13.8826 11.5819 14.2322 11.2322C14.5819 10.8826 15.0273 10.6445 15.5123 10.548C15.9972 10.4516 16.4999 10.5011 16.9567 10.6903C17.4135 10.8795 17.804 11.2 18.0787 11.6111C18.3534 12.0222 18.5 12.5055 18.5 13C18.5 13.663 18.2366 14.2989 17.7678 14.7678C17.2989 15.2366 16.663 15.5 16 15.5ZM16 1.5C12.951 1.50331 10.0279 2.71597 7.87193 4.87193C5.71597 7.02788 4.50331 9.95103 4.5 13C4.5 22.67 14.705 29.925 15.14 30.2288C15.3921 30.4052 15.6923 30.4998 16 30.4998C16.3077 30.4998 16.6079 30.4052 16.86 30.2288C18.7928 28.8043 20.5612 27.1692 22.1325 25.3538C25.6437 21.3213 27.5 17.0462 27.5 13C27.4967 9.95103 26.284 7.02788 24.1281 4.87193C21.9721 2.71597 19.049 1.50331 16 1.5ZM19.9125 23.3388C18.7207 24.7078 17.4115 25.9701 16 27.1112C14.5885 25.9701 13.2793 24.7078 12.0875 23.3388C10 20.9213 7.5 17.1638 7.5 13C7.5 10.7457 8.39553 8.58365 9.98959 6.98959C11.5837 5.39553 13.7457 4.5 16 4.5C18.2543 4.5 20.4163 5.39553 22.0104 6.98959C23.6045 8.58365 24.5 10.7457 24.5 13C24.5 17.1638 22 20.9213 19.9125 23.3388Z" fill="black" /> 
+                </svg>
+                <span>آدرس: در محل</span>
+            </div>
+            <div>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M28 19.3499L22.1138 16.7112L22.0913 16.7012C21.7086 16.5362 21.2908 16.4698 20.8759 16.5081C20.461 16.5463 20.0623 16.6879 19.7163 16.9199C19.6678 16.9524 19.621 16.9875 19.5763 17.0249L16.7875 19.3999C15.1625 18.5187 13.4838 16.8537 12.6013 15.2487L14.9838 12.4162C15.0221 12.3705 15.0575 12.3225 15.09 12.2724C15.316 11.9276 15.4532 11.5323 15.4894 11.1216C15.5256 10.711 15.4597 10.2977 15.2975 9.91869C15.2937 9.91143 15.2903 9.90391 15.2875 9.89619L12.65 3.99994C12.4335 3.50684 12.064 3.09655 11.5962 2.82978C11.1284 2.563 10.5871 2.45393 10.0525 2.51869C8.23797 2.75706 6.57225 3.64778 5.36643 5.02451C4.16062 6.40123 3.49717 8.16981 3.50001 9.99994C3.50001 20.2012 11.7988 28.4999 22 28.4999C23.8301 28.5028 25.5987 27.8393 26.9754 26.6335C28.3522 25.4277 29.2429 23.762 29.4813 21.9474C29.546 21.4128 29.4369 20.8715 29.1702 20.4037C28.9034 19.9359 28.4931 19.5664 28 19.3499ZM22 25.4999C17.8907 25.495 13.9511 23.8604 11.0453 20.9546C8.1396 18.0489 6.50497 14.1093 6.50001 9.99994C6.49715 8.96431 6.84874 7.95887 7.49636 7.15071C8.14398 6.34255 9.04864 5.78032 10.06 5.55744L12.4125 10.8074L10.0175 13.6599C9.9788 13.7061 9.9429 13.7545 9.91001 13.8049C9.67395 14.1656 9.53516 14.5812 9.50712 15.0114C9.47909 15.4416 9.56276 15.8717 9.75001 16.2599C10.9275 18.6699 13.3538 21.0799 15.7888 22.2599C16.1796 22.4452 16.6119 22.526 17.0433 22.4942C17.4747 22.4624 17.8905 22.3193 18.25 22.0787C18.2983 22.0461 18.3447 22.0106 18.3888 21.9724L21.1925 19.5887L26.4425 21.9399C26.2196 22.9513 25.6574 23.856 24.8492 24.5036C24.0411 25.1512 23.0356 25.5028 22 25.4999Z" fill="black" /> 
+                </svg>
+                <span>تلفن: ۱۲۳۴۵۶۷۸۹</span>
+            </div>
+        </div>
+        <div class="row justify-content-center contact mt-5">
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+            <div class="col-6">
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">نام</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1">
                     </div>
-                </div>
-              </a>
-            </div>
-            <div class="col">
-                <a href="one-news.html">
-                  <div class="card">
-                      <img src="assets/images/5.jpeg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                          <div class="date">۱۴۰۳/۶/۲۶</div>
-                        <h5 class="card-title">عنوان خبر</h5>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">ایمیل</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">موضوع</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1">
                       </div>
-                  </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="one-news.html">
-                  <div class="card">
-                      <img src="assets/images/5.jpeg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                          <div class="date">۱۴۰۳/۶/۲۶</div>
-                        <h5 class="card-title">عنوان خبر</h5>
-                      </div>
-                  </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="one-news.html">
-                  <div class="card">
-                      <img src="assets/images/5.jpeg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                          <div class="date">۱۴۰۳/۶/۲۶</div>
-                        <h5 class="card-title">عنوان خبر</h5>
-                      </div>
-                  </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="one-news.html">
-                  <div class="card">
-                      <img src="assets/images/5.jpeg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                          <div class="date">۱۴۰۳/۶/۲۶</div>
-                        <h5 class="card-title">عنوان خبر</h5>
-                      </div>
-                  </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="one-news.html">
-                  <div class="card">
-                      <img src="assets/images/5.jpeg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                          <div class="date">۱۴۰۳/۶/۲۶</div>
-                        <h5 class="card-title">عنوان خبر</h5>
-                      </div>
-                  </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="one-news.html">
-                  <div class="card">
-                      <img src="assets/images/5.jpeg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                          <div class="date">۱۴۰۳/۶/۲۶</div>
-                        <h5 class="card-title">عنوان خبر</h5>
-                      </div>
-                  </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="one-news.html">
-                  <div class="card">
-                      <img src="assets/images/5.jpeg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                          <div class="date">۱۴۰۳/۶/۲۶</div>
-                        <h5 class="card-title">عنوان خبر</h5>
-                      </div>
-                  </div>
-                </a>
+                    <div class="mb-3 form-check">
+                      <label class="form-check-label" for="suggestion">متن پیام</label>
+                      <textarea name="" id="suggestion" cols="36" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-warning">ارسال</button>
+                </form>
             </div>
         </div>
-     </div>
-    <!-- End News List -->
-
+    </div> 
+      
+    <!-- End News Body -->
 
     <!-- Start Footer -->
     <div class="footer">
@@ -187,8 +139,8 @@
               <h3 class="fw-bold">نام سایت</h3>
               <ul class="d-flex">
                 <li><a href="">سوالات پر تکرار</a></li>
-                <li><a href="">درباره ما</a></li>
-                <li><a href="">تماس با ما</a></li>
+                <li><a href="about-us.html">درباره ما</a></li>
+                <li><a href="contact-us.html">تماس با ما</a></li>
               </ul>
               <hr>
               <div class="text-end">
@@ -241,6 +193,7 @@
 
      <!-- start Scripts -->
      <script src="assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+     <script src="assets/js/product.js"></script>
     <!-- end Scripts -->
     
 </body>

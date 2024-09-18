@@ -90,6 +90,23 @@ input{
     font-size: 2rem;
 }
 
+/* back to up button */
+#backToTop {  
+    position: fixed;  
+    bottom: 30px;  
+    right: 30px;  
+    display: none; /* در ابتدا پنهان است */  
+    background-color: #007bff;  
+    color: white;  
+    border: none;  
+    border-radius: 5px;  
+    padding: 10px 15px;  
+    cursor: pointer;  
+}  
+#backToTop:hover {  
+    background-color: #0056b3;  
+}  
+
 /* new Products */
 .products-section{
     display: flex;
@@ -368,7 +385,7 @@ video{
     margin-top: 10rem;
     border: 2px solid rgb(128, 55, 7);
     border-radius: 20px;
-    background-color: khaki;
+    background-color: rgb(247, 158, 2);
 }
 
 /* footer */
@@ -420,6 +437,9 @@ video{
     width: 9rem;
 }
 
+a{
+    text-decoration: none;
+}
 
 
 

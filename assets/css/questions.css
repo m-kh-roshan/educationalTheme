@@ -1,0 +1,16 @@
+.questions-sample{
+    margin-top: 10rem;
+}
+
+.title{
+    margin-bottom: 5rem;
+}
+
+.card{
+    background-color: rgba(108, 218, 238, 0.4);
+}
+
+#q-filter{
+    width: 30%;
+    margin: 0 1rem;
+}
