@@ -1,0 +1,23 @@
+.all-news{
+    margin-top: 10rem;
+}
+
+.title{
+    margin-bottom: 6rem;
+}
+
+.title h2{
+    font-weight: bolder;
+}
+
+a{
+    text-decoration: none;
+}
+
+.card{
+    transition: all 0.5s;
+}
+
+.card:hover{
+    padding: 1rem;
+}
