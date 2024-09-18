@@ -1,0 +1,27 @@
+.card-profile{
+    margin-top: 10rem;
+}
+
+.informations{
+    box-shadow: 2px 2px 5px 4px lightblue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem;
+}
+
+.img-content{
+    width: 10rem;
+    height: 10rem;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+.img-content img{
+    width: 10rem;
+    height: 10rem;
+}
