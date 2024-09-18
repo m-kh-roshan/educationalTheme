@@ -58,7 +58,7 @@
     border-radius: 10px;
 }
 
-#personal-info, #user-info, #history{
+#user-info, #history{
     display: none;
 }
 
