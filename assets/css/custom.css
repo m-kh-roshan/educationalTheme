@@ -76,7 +76,22 @@ body{
     .sort{
         margin-left: 10px;
     }
+
+    #navbarSupportedContent{
+        border-radius: 10px;
+        background-color: rgb(6, 112, 6);
+    }
+
+    nav{
+        background-color: #0056b3;
+    }
 }
+
+.inner-link{
+    display: flex;
+}
+
+
 
 .search-input{
     height: 7vh;
@@ -203,8 +218,7 @@ input{
 }
 
 .filter-sort{
-    direction: ltr;
-    justify-content: end;
+    direction: rtl;
 }
 
 .sort{
@@ -264,6 +278,9 @@ input{
 
 .news .card{
     width: 24rem;
+}
+.news a{
+    color: #444;
 }
 
 /* articles */
@@ -335,6 +352,10 @@ input{
     position: absolute;
     top: 20%;
     left: 40%;
+}
+
+.articles a{
+    color: #eee;
 }
 
 /* video section */
@@ -439,6 +460,27 @@ video{
 
 a{
     text-decoration: none;
+}
+
+.footer-color, .footer-color a{
+    color: white;
+}
+
+
+@media screen and (max-width: 1200px){
+    .none-small{
+        display: none;
+    }
+
+    .inner-link{
+        display: block;
+    }
+
+    
+}
+
+li ul{
+    text-align: end;
 }
 
 

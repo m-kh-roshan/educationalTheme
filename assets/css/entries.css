@@ -1,5 +1,7 @@
 body{
-    background-color: #10e7dc;
+    background-image: url(../images/backLogin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;

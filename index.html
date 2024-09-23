@@ -37,7 +37,7 @@
                       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       منابع
                       </a>
-                      <ul class="dropdown-menu">
+                      <ul class="dropdown-menu text-end">
                       <li><a class="dropdown-item" href="#">پایه دهم</a></li>
                       <li><a class="dropdown-item" href="#">پایه یازدهم</a></li>
                       <li><hr class="dropdown-divider"></li>
@@ -314,99 +314,105 @@
 
         </div>
         <!-- filter and sort -->
-        <div class="row filter-sort mb-3 justify-content-start position-relative">
-          <div class="dropdown col-1">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">مرتب سازی بر اساس</button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">جدیدترین ها</a></li>
-              <li><a class="dropdown-item" href="#">پربازدید ترین ها</a></li>
-              <li><a class="dropdown-item" href="#">پرفروش ترین ها</a></li>
-            </ul>
-          </div>
-          <p class="d-inline-flex gap-1">
-            <a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-funnel" viewBox="0 0 16 16">
-                <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z"/>
-              </svg>
-
-            </a>
-          </p>
-          <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-              <!-- form filter -->
-              <form>
-                <fieldset>
-                  <legend>فیلتر محصولات</legend>
-                  <div class="row justify-content-start">
-                    <div class=" col col-md-6 mb-3 d-flex align-items-start justify-content-rounded">
-                      <p class="mt-2">نوع محصول: </p>
-                      <input type="checkbox" class="btn-check" id="btn-check-4" autocomplete="off">
-                      <label class="btn" for="btn-check-4 ">تست</label>
+        <div class="row justify-content-start filter-sort mb-3">
+          <div class="">
+            <p class="d-inline-flex gap-1">
+              <a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
   
-                      <input type="checkbox" class="btn-check" id="btn-check-5" checked autocomplete="off">
-                      <label class="btn" for="btn-check-5">نکته</label>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-funnel" viewBox="0 0 16 16">
+                  <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z"/>
+                </svg>
   
-                      <input type="checkbox" class="btn-check" id="btn-check-6" autocomplete="off" disabled>
-                      <label class="btn" for="btn-check-6">درسنامه</label>
+              </a>
+            </p>
+            <p class="d-inline-flex gap-1">
+              <a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapseExample">مرتب سازی بر اساس</a>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                <!-- form filter -->
+                <form>
+                  <fieldset>
+                    <legend>فیلتر محصولات</legend>
+                    <div class="row justify-content-start">
+                      <div class=" col col-md-6 mb-3 d-flex align-items-start justify-content-rounded">
+                        <p class="mt-2">نوع محصول: </p>
+                        <input type="checkbox" class="btn-check" id="btn-check-4" autocomplete="off">
+                        <label class="btn" for="btn-check-4 ">تست</label>
+    
+                        <input type="checkbox" class="btn-check" id="btn-check-5" checked autocomplete="off">
+                        <label class="btn" for="btn-check-5">نکته</label>
+    
+                        <input type="checkbox" class="btn-check" id="btn-check-6" autocomplete="off" disabled>
+                        <label class="btn" for="btn-check-6">درسنامه</label>
+                      </div>
+                      <div class=" col col-md-6 mb-3 d-flex align-items-start justify-content-rounded">
+                        <p class="mt-2">رشته: </p>
+                        <input type="checkbox" class="btn-check" id="btn-check-4" autocomplete="off">
+                        <label class="btn" for="btn-check-4 ">تجربی</label>
+    
+                        <input type="checkbox" class="btn-check" id="btn-check-5" checked autocomplete="off">
+                        <label class="btn" for="btn-check-5">ریاضی</label>
+    
+                        <input type="checkbox" class="btn-check" id="btn-check-6" autocomplete="off" disabled>
+                        <label class="btn" for="btn-check-6">انسانی</label>
+                        <input type="checkbox" class="btn-check" id="btn-check-6" autocomplete="off" disabled>
+                        <label class="btn" for="btn-check-6">هنر</label>
+                      </div>
+                      <div class=" col col-md-6 mb-3 d-flex align-items-start justify-content-rounded">
+                        <p class="mt-2">پایه: </p>
+                        <input type="checkbox" class="btn-check" id="btn-check-4" autocomplete="off">
+                        <label class="btn" for="btn-check-4 ">دهم</label>
+    
+                        <input type="checkbox" class="btn-check" id="btn-check-5" checked autocomplete="off">
+                        <label class="btn" for="btn-check-5">یازدهم</label>
+    
+                        <input type="checkbox" class="btn-check" id="btn-check-6" autocomplete="off" disabled>
+                        <label class="btn" for="btn-check-6">دوازدهم</label>
+                      </div>
+                      <div class=" col col-md-6 mb-3 d-flex align-items-start justify-content-rounded">
+                        <p class="mt-2 me-2">درس: </p>
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected disabled></option>
+                          <option value="0">هندسه</option>
+                          <option value="1">جبر و احتمال</option>
+                          <option value="2">گسسته</option>
+                          <option value="3">فیزیک</option>
+                        </select>
+                      </div>
+                      <div class=" col col-md-6 mb-3 d-flex align-items-start justify-content-rounded">
+                        <p class="mt-2 me-2">فصل: </p>
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected disabled></option>
+                          <option value="0">۱</option>
+                          <option value="1">۲</option>
+                          <option value="2">۳</option>
+                          <option value="3">۴</option>
+                        </select>
+                      </div>
                     </div>
-                    <div class=" col col-md-6 mb-3 d-flex align-items-start justify-content-rounded">
-                      <p class="mt-2">رشته: </p>
-                      <input type="checkbox" class="btn-check" id="btn-check-4" autocomplete="off">
-                      <label class="btn" for="btn-check-4 ">تجربی</label>
   
-                      <input type="checkbox" class="btn-check" id="btn-check-5" checked autocomplete="off">
-                      <label class="btn" for="btn-check-5">ریاضی</label>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </fieldset>
+                </form>
   
-                      <input type="checkbox" class="btn-check" id="btn-check-6" autocomplete="off" disabled>
-                      <label class="btn" for="btn-check-6">انسانی</label>
-                      <input type="checkbox" class="btn-check" id="btn-check-6" autocomplete="off" disabled>
-                      <label class="btn" for="btn-check-6">هنر</label>
-                    </div>
-                    <div class=" col col-md-6 mb-3 d-flex align-items-start justify-content-rounded">
-                      <p class="mt-2">پایه: </p>
-                      <input type="checkbox" class="btn-check" id="btn-check-4" autocomplete="off">
-                      <label class="btn" for="btn-check-4 ">دهم</label>
+              </div>
+            </div>
+            <div class="collapse" id="collapse2">
+              <div class="row border p-2">
+                <!-- form filter -->
+                 <div class="col"><button class="btn btn-outline-dark">جدید ترین ها</button></div>
+                 <div class="col"><button class="btn btn-outline-dark">پر بازدید ترین ها</button></div>
+                 <div class="col"><button class="btn btn-outline-dark">پر فروش ترین ها</button></div>
   
-                      <input type="checkbox" class="btn-check" id="btn-check-5" checked autocomplete="off">
-                      <label class="btn" for="btn-check-5">یازدهم</label>
-  
-                      <input type="checkbox" class="btn-check" id="btn-check-6" autocomplete="off" disabled>
-                      <label class="btn" for="btn-check-6">دوازدهم</label>
-                    </div>
-                    <div class=" col col-md-6 mb-3 d-flex align-items-start justify-content-rounded">
-                      <p class="mt-2 me-2">درس: </p>
-                      <select class="form-select" aria-label="Default select example">
-                        <option selected disabled></option>
-                        <option value="0">هندسه</option>
-                        <option value="1">جبر و احتمال</option>
-                        <option value="2">گسسته</option>
-                        <option value="3">فیزیک</option>
-                      </select>
-                    </div>
-                    <div class=" col col-md-6 mb-3 d-flex align-items-start justify-content-rounded">
-                      <p class="mt-2 me-2">فصل: </p>
-                      <select class="form-select" aria-label="Default select example">
-                        <option selected disabled></option>
-                        <option value="0">۱</option>
-                        <option value="1">۲</option>
-                        <option value="2">۳</option>
-                        <option value="3">۴</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </fieldset>
-              </form>
-
+              </div>
             </div>
           </div>
           
           
         </div>
         <!-- cards -->
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 row-cols-sm-2 g-4 all-product">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 row-cols-lg-3 g-4 all-product">
             <!-- ___Card___ -->
             <div class="col">
               <div class="card h-100 product-card">
@@ -1134,7 +1140,7 @@
           <h3>سوالات پر تکرار</h3>
           <hr style="width: 50%;">
         </div>
-        <div class="col col-md-8 col-lg-6">
+        <div class="col col-md-9">
 
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
@@ -1237,19 +1243,19 @@
       <div class="container">
         <div class="row">
           <div class="col internal-links">
-            <h3 class="fw-bold">نام سایت</h3>
-            <ul class="d-flex">
+            <h3 class="fw-bold footer-color">نام سایت</h3>
+            <ul class="inner-link footer-color">
               <li><a href="">سوالات پر تکرار</a></li>
               <li><a href="about-us.html">درباره ما</a></li>
               <li><a href="contact-us.html">تماس با ما</a></li>
             </ul>
-            <hr>
-            <div class="text-end">
-              <h4 class="fw-bold">درباره ما</h4>
-              <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+            <hr class="footer-color none-small">
+            <div class="text-end about-footer none-small">
+              <h4 class="fw-bold footer-color">درباره ما</h4>
+              <p class="footer-color">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
             </div>
           </div>
-          <div class="col good-links">
+          <div class="col good-links footer-color">
             <h3 class="fs-5 fw-bold">لینک های مفید</h3>
             <ul>
               <li><a href="">سازمان سنجش</a></li>

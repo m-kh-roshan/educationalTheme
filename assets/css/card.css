@@ -37,3 +37,9 @@
 .card-profile img{
     width: 10rem;
 }
+
+.img-product{
+    border-radius: 10px;
+    overflow: hidden;
+    object-fit: cover;
+}
